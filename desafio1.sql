@@ -39,3 +39,5 @@ INSERT INTO comentarios (id, contenido) VALUES (1, 'Buen post'), (1, 'Muy buen p
 -- Crear un nuevo post para "Margarita"
 INSERT INTO post(nombre_usuario, contenido, descripcion, titulo) VALUES ('Margarita', 'lorem ipsum...', 'lorem ipsum...', 'Mi primer post');
 
+-- Ingresar 5 comentarios para el post de Margarita
+INSERT INTO comentarios(id, contenido) VALUES (7, 'Buen post'), (7, 'Mal post'), (7, 'No me gusto'), (7, 'Interesante'), (7, 'Buenisimo');
