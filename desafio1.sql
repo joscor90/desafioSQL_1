@@ -28,3 +28,8 @@ DELETE FROM post WHERE nombre_usuario='Carlos';
 INSERT INTO post(nombre_usuario, contenido, descripcion, titulo) VALUES ('Carlos', 'lorem ipsum...', 'lorem ipsum...', 'Post de regreso');
 
 -- SEGUNDA PARTE
+
+-- Crear una nueva tabla, llamada comentarios, con los atributos id, fecha y hora de creación, contenido, que se relacione con la tabla posts.
+CREATE TABLE comentarios(id INT, fecha_hora_creacion TIMESTAMP DEFAULT NOW(), contenido VARCHAR(150), FOREIGN KEY (id) REFERENCES post(id));
+
+
