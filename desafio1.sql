@@ -36,3 +36,6 @@ CREATE TABLE comentarios(id INT, fecha_hora_creacion TIMESTAMP DEFAULT NOW(), co
 -- Crear 2 comentarios para el post de "Pamela" y 4 para "Carlos"
 INSERT INTO comentarios (id, contenido) VALUES (1, 'Buen post'), (1, 'Muy buen post'), (6, 'Buen post'), (6, 'Buen post'), (6, 'Buen post'), (6, 'No me gusto tu post');
 
+-- Crear un nuevo post para "Margarita"
+INSERT INTO post(nombre_usuario, contenido, descripcion, titulo) VALUES ('Margarita', 'lorem ipsum...', 'lorem ipsum...', 'Mi primer post');
+
