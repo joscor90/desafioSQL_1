@@ -1,4 +1,5 @@
 -- PRIMERA PARTE
+
 -- Crear Base de datos posts
 CREATE DATABASE posts;
 
@@ -32,4 +33,6 @@ INSERT INTO post(nombre_usuario, contenido, descripcion, titulo) VALUES ('Carlos
 -- Crear una nueva tabla, llamada comentarios, con los atributos id, fecha y hora de creación, contenido, que se relacione con la tabla posts.
 CREATE TABLE comentarios(id INT, fecha_hora_creacion TIMESTAMP DEFAULT NOW(), contenido VARCHAR(150), FOREIGN KEY (id) REFERENCES post(id));
 
+-- Crear 2 comentarios para el post de "Pamela" y 4 para "Carlos"
+INSERT INTO comentarios (id, contenido) VALUES (1, 'Buen post'), (1, 'Muy buen post'), (6, 'Buen post'), (6, 'Buen post'), (6, 'Buen post'), (6, 'No me gusto tu post');
 
