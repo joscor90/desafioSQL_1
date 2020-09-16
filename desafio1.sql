@@ -1,4 +1,4 @@
---PRIMERA PARTE
+-- PRIMERA PARTE
 -- Crear Base de datos posts
 CREATE DATABASE posts;
 
@@ -24,3 +24,7 @@ INSERT INTO post(nombre_usuario, contenido, descripcion, titulo) VALUES ('Pedro'
 -- Eliminar el post de Carlos
 DELETE FROM post WHERE nombre_usuario='Carlos';
 
+-- Ingresar un nuevo post para el usuario "Carlos"
+INSERT INTO post(nombre_usuario, contenido, descripcion, titulo) VALUES ('Carlos', 'lorem ipsum...', 'lorem ipsum...', 'Post de regreso');
+
+-- SEGUNDA PARTE
