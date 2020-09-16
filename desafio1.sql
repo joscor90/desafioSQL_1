@@ -21,3 +21,6 @@ UPDATE post SET titulo='Mi primer post' WHERE id=3;
 -- Insertar 2 post para el usuario "Pedro"
 INSERT INTO post(nombre_usuario, contenido, descripcion, titulo) VALUES ('Pedro', 'lorem ipsum...', 'lorem ipsum...', 'Mi primer post'), ('Pedro', 'lorem ipsum...', 'lorem ipsum...', 'Mi segundo post');
 
+-- Eliminar el post de Carlos
+DELETE FROM post WHERE nombre_usuario='Carlos';
+
