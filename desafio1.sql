@@ -9,3 +9,11 @@ INSERT INTO post(nombre_usuario, contenido, descripcion) VALUES ('Pamela', 'lore
 
 -- Modificar la tabla post, agregando la columna título
 ALTER TABLE post ADD COLUMN titulo VARCHAR(20);
+
+-- Agregar título a las publicaciones ya ingresadas
+UPDATE post SET titulo='Mi primer post' WHERE id=1;
+
+UPDATE post SET titulo='Mi segundo post' WHERE id=2;
+
+UPDATE post SET titulo='Mi primer post' WHERE id=3;
+
